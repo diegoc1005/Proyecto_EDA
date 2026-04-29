@@ -1,0 +1,5 @@
+1|admin|estonoesunacontraseña|admin
+2|diego|prueba|user
+3|maria|mangos|user
+4|lector_pro|amoloslibros|user
+5|juan|caballo|user

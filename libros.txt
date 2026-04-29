@@ -1,0 +1,6 @@
+1|1984|George Orwell|Ficcion|4.8|10
+2|Cien Anios de Soledad|Gabriel Garcia Marquez|Realismo Magico|4.9|15
+3|El Principito|Antoine de Saint-Exupery|Infantil|4.7|20
+4|Rayuela|Julio Cortazar|Ficcion|4.5|8
+5|Fahrenheit 451|Ray Bradbury|Ciencia Ficcion|4.6|12
+6|Dune|Frank Herbert|Ciencia Ficcion|4.8|25

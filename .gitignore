@@ -1,0 +1,45 @@
+# Ejecutables
+*.exe
+*.out
+a.out
+proyecto
+proyecto.exe
+
+# Archivos objeto
+*.o
+*.obj
+
+# Archivos temporales
+*.tmp
+*.temp
+*~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Archivos de backup
+*.bak
+*.swp
+*.swo
+
+# Archivos ZIP
+*.zip
+
+# Archivos de imagen (opcional, puedes comentar si quieres subirlas)
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# PDF del proyecto (ya está en el repo)
+# EDAI_Project_01_CNs9XAm.pdf
+
+# Archivos de Word
+*.docx
+~$*.docx

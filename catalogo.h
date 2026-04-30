@@ -150,5 +150,8 @@ void escribir_resena_usuario(struct Usuario *user, struct Libro *libros, struct 
 void ver_notificaciones_usuario(struct Usuario *user);
 void buscar_genero_usuario(struct Libro *libros);
 void ver_resenas_libro(struct Libro *libros);
+void buscar_titulo_usuario(struct Libro *libros);
+void top_libros_usuario(struct Libro *libros);
+void estadisticas_usuario(struct Libro *libros);
 
 #endif

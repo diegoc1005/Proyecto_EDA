@@ -35,18 +35,23 @@ void moderar_resenas_admin(struct Libro **libros, struct Cola *cola) {
                     libro_actual->numResenas++;
                     libro_actual->calificacion = suma_total / libro_actual->numResenas;
                     
-                    printf("[OK] Calificacion actualizada: %.1f (%d resenas)\n", 
+                    printf("[OK] Calificacion actualizada: %.1f (%d resenas)\n",
                            libro_actual->calificacion, libro_actual->numResenas);
                     
                     // Guardamos la reseña aprobada en archivo
                     FILE *f = fopen("resenas_aprobadas.txt", "a");
                     if (f != NULL) {
-                        fprintf(f, "%d|%d|%d|%s\n", 
+                        fprintf(f, "%d|%d|%d|%s\n",
                                 peticion_actual.idResena,
                                 peticion_actual.idLibro,
                                 peticion_actual.idUsuario,
                                 peticion_actual.texto);
                         fclose(f);
+                    }
+                    
+                    // Guardamos el catálogo actualizado inmediatamente
+                    if (guardar_catalog(*libros, "libros.txt") == True) {
+                        printf("[OK] Catalogo actualizado.\n");
                     }
                     break;
                 }
@@ -54,6 +59,11 @@ void moderar_resenas_admin(struct Libro **libros, struct Cola *cola) {
             }
         } else {
             printf("Resena RECHAZADA.\n");
+        }
+        
+        // Guardamos la cola actualizada (se quitó una reseña)
+        if (guardar_cola(cola, "resenas_pendientes.txt") == True) {
+            printf("[OK] Cola de pendientes actualizada.\n");
         }
     } else {
         printf("No hay resenas pendientes en la cola. ¡Todo al dia!\n");

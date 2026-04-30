@@ -34,6 +34,11 @@ enum boolean registrar_usuario(struct Usuario **head_usuarios, int *numUsuarios)
 
     (*numUsuarios)++;
     printf("\n[OK] Usuario %s registrado con exito (ID: %d).\n", tmp->nombre, tmp->id);
+    
+    // Guardamos la lista de usuarios inmediatamente
+    if (guardar_usuarios(*head_usuarios, "usuarios.txt") == True) {
+        printf("[OK] Usuario guardado.\n");
+    }
 
     return True;
 }

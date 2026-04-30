@@ -40,6 +40,11 @@ void agregar_libro_admin(struct Libro **libros) {
     
     if (insert_book(libros, nuevo) == True) {
         printf("\n[OK] Libro agregado exitosamente con ID %d.\n", nuevo->id);
+        
+        // Guardamos el catálogo inmediatamente
+        if (guardar_catalog(*libros, "libros.txt") == True) {
+            printf("[OK] Catalogo guardado.\n");
+        }
     } else {
         printf("\n[!] Error al agregar el libro.\n");
         free(nuevo);

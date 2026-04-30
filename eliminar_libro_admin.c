@@ -18,6 +18,11 @@ void eliminar_libro_admin(struct Libro **libros) {
     
     if (delete_book(libros, titulo_buscar) == True) {
         printf("\n[OK] Libro eliminado exitosamente.\n");
+        
+        // Guardamos el catálogo inmediatamente
+        if (guardar_catalog(*libros, "libros.txt") == True) {
+            printf("[OK] Catalogo guardado.\n");
+        }
     } else {
         printf("\n[!] No se encontro un libro con ese titulo.\n");
     }

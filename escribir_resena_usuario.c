@@ -59,6 +59,11 @@ void escribir_resena_usuario(struct Usuario *user, struct Libro *libros, struct 
     if (enqueue(cola, idResenaCounter, idLibro, user->id, texto, puntuacion) == True) {
         printf("\n[OK] Tu resena ha sido enviada y esta pendiente de aprobacion.\n");
         
+        // Guardamos la cola inmediatamente
+        if (guardar_cola(cola, "resenas_pendientes.txt") == True) {
+            printf("[OK] Resena guardada en cola de pendientes.\n");
+        }
+        
         // Agregamos una notificación al usuario
         char mensaje[200];
         snprintf(mensaje, 200, "Tu resena para '%s' esta en revision.", libro_encontrado->titulo);

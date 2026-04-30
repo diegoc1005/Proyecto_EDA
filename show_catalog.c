@@ -11,18 +11,18 @@ void show_catalog(struct Libro *head) {
     struct Libro *actual = head;
 
     // Imprimimos el encabezado de la tabla
-    printf("\n========================================================================================\n");
+    printf("\n==============================================================================================\n");
     // %-35s asegura que las columnas queden perfectamente alineadas sin importar el tamaño del texto.
-    printf("%-35s | %-25s | %-15s | %-5s\n", "TITULO", "AUTOR", "GENERO", "CALIF");
-    printf("========================================================================================\n");
+    printf("%-4s | %-35s | %-25s | %-15s | %-5s\n", "ID", "TITULO", "AUTOR", "GENERO", "CALIF");
+    printf("==============================================================================================\n");
 
     // Recorremos la lista nodo por nodo hasta llegar a NULL osea el final
     while (actual != NULL) {
-        printf("%-35s | %-25s | %-15s | %.1f\n", 
-               actual->titulo, actual->autor, actual->genero, actual->calificacion);
+        printf("%-4d | %-35s | %-25s | %-15s | %.1f\n",
+               actual->id, actual->titulo, actual->autor, actual->genero, actual->calificacion);
         
         // Saltamos al siguiente nodo
         actual = actual->nxt;
     }
-    printf("========================================================================================\n\n");
+    printf("==============================================================================================\n\n");
 }

@@ -27,7 +27,9 @@ void menu_login(struct Usuario **head_usuarios, int *numUsuarios, struct Libro *
             case INICIAR_SESION:
                 printf("\n--- LOGIN ---\n");
                 printf("Usuario: ");
-                scanf(" %49[^\n]", user);
+                while(getchar() != '\n'); // Limpiar buffer
+                fgets(user, 50, stdin);
+                user[strcspn(user, "\n")] = 0; // Quitar salto de línea
                 
                 // Verificamos si el usuario existe ANTES de pedir password
                 struct Usuario *actual = *head_usuarios;
@@ -48,7 +50,8 @@ void menu_login(struct Usuario **head_usuarios, int *numUsuarios, struct Libro *
 
                 // Si existe, pedimos la contraseña
                 printf("Password: ");
-                scanf(" %49[^\n]", pass);
+                fgets(pass, 50, stdin);
+                pass[strcspn(pass, "\n")] = 0; // Quitar salto de línea
                 
                 // Intentamos hacer login
                 sesion = login_usuario(*head_usuarios, user, pass);

@@ -4,7 +4,8 @@ enum boolean registrar_usuario(struct Usuario **head_usuarios, int *numUsuarios)
     char nombre_temp[50];
     
     printf("Escribe tu nombre de usuario: ");
-    scanf(" %49[^\n]", nombre_temp);
+    fgets(nombre_temp, 50, stdin);
+    nombre_temp[strcspn(nombre_temp, "\n")] = 0; // Quitar salto de línea
     
     // Verificamos que el nombre no exista ya
     struct Usuario *actual = *head_usuarios;
@@ -24,7 +25,8 @@ enum boolean registrar_usuario(struct Usuario **head_usuarios, int *numUsuarios)
     strcpy(tmp->nombre, nombre_temp);
 
     printf("Escribe tu password: ");
-    scanf(" %49[^\n]", tmp->password);
+    fgets(tmp->password, 50, stdin);
+    tmp->password[strcspn(tmp->password, "\n")] = 0; // Quitar salto de línea
 
     strcpy(tmp->rol, "user");
     tmp->top_notificaciones = NULL;

@@ -35,21 +35,29 @@ void escribir_resena_usuario(struct Usuario *user, struct Libro *libros, struct 
         return;
     }
     
+    // Limpiamos el buffer
+    while(getchar() != '\n');
+    
+    // Primero pedimos el texto de la reseña
+    char texto[500];
+    printf("\nEscribe tu resena (max 500 caracteres):\n");
+    fgets(texto, 500, stdin);
+    texto[strcspn(texto, "\n")] = 0;
+    
+    // Validamos que no esté vacía
+    if (strlen(texto) == 0) {
+        printf("\n[!] Error: La resena no puede estar vacia.\n");
+        return;
+    }
+    
+    // Después pedimos la calificación
     int puntuacion;
-    printf("Calificacion (1-5 estrellas): ");
+    printf("\nAhora califica el libro (1-5 estrellas): ");
     if(scanf("%d", &puntuacion) != 1 || puntuacion < 1 || puntuacion > 5) {
         printf("\n[!] Error: La calificacion debe ser entre 1 y 5.\n");
         while(getchar() != '\n');
         return;
     }
-    
-    // Limpiamos el buffer
-    while(getchar() != '\n');
-    
-    char texto[500];
-    printf("Escribe tu resena (max 500 caracteres):\n");
-    fgets(texto, 500, stdin);
-    texto[strcspn(texto, "\n")] = 0;
     
     // Generamos un ID único para la reseña
     static int idResenaCounter = 1000;

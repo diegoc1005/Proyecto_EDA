@@ -1,2 +1,150 @@
-1001|1|2|Es un gran libro
-1001|44|7|Esta muy chida, me la pase muy bien leyendola
+1|1|2|Obra maestra distopica, muy relevante hoy
+2|1|3|Me encanto, muy inquietante
+3|1|4|Lectura obligatoria, excelente
+4|2|2|Realismo magico en su maxima expresion
+5|2|5|Una joya de la literatura latinoamericana
+6|2|3|Hermoso y complejo, me fascino
+7|3|4|Tierno y profundo a la vez
+8|3|2|Perfecto para todas las edades
+9|3|5|Un clasico que nunca pasa de moda
+10|4|3|Experimental pero genial
+11|4|4|Cortazar es un maestro
+12|4|2|Desafiante pero vale la pena
+13|5|5|Critica social brillante
+14|5|3|Bradbury siempre sorprende
+15|5|4|Distopia clasica imprescindible
+16|6|2|Epico y fascinante
+17|6|4|Worldbuilding increible
+18|6|5|La mejor ciencia ficcion
+19|7|3|Aventura magica inolvidable
+20|7|2|Perfecto inicio para Tolkien
+21|7|4|Me transporto a otro mundo
+22|8|5|Romance clasico bien escrito
+23|8|3|Austen nunca decepciona
+24|8|4|Personajes memorables
+25|9|2|Largo pero vale la pena
+26|9|4|Humor y aventura perfectos
+27|9|3|Un clasico por buenas razones
+28|10|5|Psicologia profunda y oscura
+29|10|4|Dostoievski es genial
+30|10|3|Intenso y reflexivo
+31|11|4|Critica al sueno americano
+32|11|3|Fitzgerald escribe hermoso
+33|11|2|Corto pero impactante
+34|12|5|Conmovedor y necesario
+35|12|4|Trata temas importantes
+36|12|3|Lectura obligatoria
+37|13|5|La trilogia perfecta
+38|13|5|Epico en todos los sentidos
+39|13|5|Obra maestra de la fantasia
+40|14|4|Magico y emocionante
+41|14|5|Inicio perfecto de la saga
+42|14|4|Rowling es brillante
+43|15|3|Clasico de la literatura
+44|15|4|Epico y aventurero
+45|15|2|Largo pero interesante
+46|16|3|Aventura en alta mar
+47|16|2|Clasico de Melville
+48|16|4|Simbolismo profundo
+49|17|4|Thriller adictivo
+50|17|3|Dan Brown entretiene
+51|17|4|No pude soltarlo
+52|18|5|Distopia emocionante
+53|18|4|Accion y romance
+54|18|5|Trilogia adictiva
+55|19|4|Interesante concepto
+56|19|3|Buena distopia juvenil
+57|19|4|Me gusto mucho
+58|20|5|Inspirador y profundo
+59|20|4|Coelho es magico
+60|20|5|Cambio mi perspectiva
+61|21|5|Misterio fascinante
+62|21|4|Zafon escribe hermoso
+63|21|5|Barcelona cobra vida
+64|22|4|Romance maduro y real
+65|22|5|Garcia Marquez genial
+66|22|4|Hermosa historia de amor
+67|23|4|Realismo magico chileno
+68|23|5|Allende es maestra
+69|23|4|Saga familiar epica
+70|24|5|Corto pero poderoso
+71|24|4|Rulfo es unico
+72|24|5|Realismo magico puro
+73|25|4|Atmosfera inquietante
+74|25|3|Fuentes escribe bien
+75|25|4|Corto y perturbador
+76|26|3|Existencialista y oscuro
+77|26|4|Sabato es profundo
+78|26|3|Psicologico e intenso
+79|27|5|Cuentos geniales
+80|27|5|Borges es un genio
+81|27|4|Cada cuento es una joya
+82|28|4|Cuentos mexicanos clasicos
+83|28|5|Rulfo maestro del cuento
+84|28|4|Realismo crudo
+85|29|4|Cuentos para ninos geniales
+86|29|3|Quiroga escribe bien
+87|29|4|Clasicos latinoamericanos
+88|30|5|Perturbador y genial
+89|30|4|Kafka es unico
+90|30|5|Metamorfosis perfecta
+91|31|4|Existencialismo puro
+92|31|5|Camus es brillante
+93|31|4|Filosofico y profundo
+94|32|4|Alegoria poderosa
+95|32|5|Camus otra vez genial
+96|32|4|Reflexion sobre humanidad
+97|33|5|Wilde es ingenioso
+98|33|4|Critica social brillante
+99|33|5|Decadencia y belleza
+100|34|5|Terror gotico clasico
+101|34|4|Stoker crea atmosfera
+102|34|5|Dracula iconico
+103|35|5|Ciencia ficcion gotica
+104|35|4|Mary Shelley visionaria
+105|35|5|Frankenstein eterno
+106|36|5|Misterio medieval fascinante
+107|36|4|Eco es erudito
+108|36|5|Biblioteca cobra vida
+109|37|4|Cyberpunk fundacional
+110|37|5|Gibson visionario
+111|37|4|Futuro distopico creible
+112|38|5|Ciencia ficcion epica
+113|38|5|Asimov es el mejor
+114|38|5|Fundacion imprescindible
+115|39|4|Robots y etica
+116|39|5|Asimov genial otra vez
+117|39|4|Cuentos clasicos
+118|40|5|Distopia aterradora
+119|40|4|Huxley visionario
+120|40|5|Mas relevante que nunca
+121|41|5|Alegoria politica perfecta
+122|41|4|Orwell maestro
+123|41|5|Corto pero poderoso
+124|42|4|Adolescencia retratada
+125|42|3|Salinger captura juventud
+126|42|4|Holden iconico
+127|43|5|Fantasia cristiana hermosa
+128|43|4|Lewis crea mundos
+129|43|5|Narnia magico
+130|44|5|Olfato como protagonista
+131|44|4|Suskind original
+132|44|5|Oscuro y fascinante
+133|45|5|Epico y conmovedor
+134|45|5|Hugo maestro
+135|45|4|Redencion y justicia
+136|46|5|Venganza epica
+137|46|5|Dumas entretiene
+138|46|4|Aventura clasica
+139|47|4|Mosqueteros iconicos
+140|47|5|Dumas otra joya
+141|47|4|Accion y amistad
+142|48|4|Romance gotico
+143|48|5|Bronte escribe hermoso
+144|48|4|Jane fuerte e inspiradora
+145|49|4|Pasion y tragedia
+146|49|3|Emily Bronte intensa
+147|49|4|Amor tormentoso
+148|50|3|Modernista y complejo
+149|50|4|Joyce experimental
+150|50|3|Retrato del artista joven

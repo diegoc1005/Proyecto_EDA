@@ -6,10 +6,22 @@ void menu_admin(struct Libro **libros, struct Cola *cola) {
     int opcion;
 
     do {
+        // Contamos cuántas reseñas hay pendientes
+        int pendientes = 0;
+        struct Peticion *temp = cola->head;
+        while (temp != NULL) {
+            pendientes++;
+            temp = temp->nxt;
+        }
+        
         printf("\n=== PANEL DE ADMINISTRADOR ===\n");
         printf("1. Ver catalogo completo\n");
         printf("2. Agregar un nuevo libro\n");
-        printf("3. Moderar resenas pendientes\n");
+        printf("3. Moderar resenas pendientes");
+        if (pendientes > 0) {
+            printf(" [%d pendiente(s)]", pendientes);
+        }
+        printf("\n");
         printf("4. Eliminar un libro\n");
         printf("0. Cerrar sesion\n");
         printf("Elige una opcion: ");

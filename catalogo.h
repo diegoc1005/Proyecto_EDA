@@ -149,5 +149,6 @@ void eliminar_libro_admin(struct Libro **libros);
 void escribir_resena_usuario(struct Usuario *user, struct Libro *libros, struct Cola *cola);
 void ver_notificaciones_usuario(struct Usuario *user);
 void buscar_genero_usuario(struct Libro *libros);
+void ver_resenas_libro(struct Libro *libros);
 
 #endif

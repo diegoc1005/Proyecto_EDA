@@ -4,3 +4,47 @@
 4|Rayuela|Julio Cortazar|Ficcion|4.50|8
 5|Fahrenheit 451|Ray Bradbury|Ciencia Ficcion|4.60|12
 6|Dune|Frank Herbert|Ciencia Ficcion|4.80|25
+7|El Hobbit|J.R.R. Tolkien|Fantasia|4.75|18
+8|Orgullo y Prejuicio|Jane Austen|Romance|4.65|14
+9|Don Quijote de la Mancha|Miguel de Cervantes|Clasico|4.55|22
+10|Crimen y Castigo|Fiodor Dostoievski|Clasico|4.70|16
+11|El Gran Gatsby|F. Scott Fitzgerald|Ficcion|4.40|10
+12|Matar un Ruisenor|Harper Lee|Ficcion|4.85|19
+13|El Senor de los Anillos|J.R.R. Tolkien|Fantasia|4.95|30
+14|Harry Potter y la Piedra Filosofal|J.K. Rowling|Fantasia|4.80|28
+15|La Odisea|Homero|Clasico|4.45|12
+16|Moby Dick|Herman Melville|Aventura|4.30|9
+17|El Codigo Da Vinci|Dan Brown|Thriller|4.20|15
+18|Los Juegos del Hambre|Suzanne Collins|Distopia|4.55|20
+19|Divergente|Veronica Roth|Distopia|4.35|17
+20|El Alquimista|Paulo Coelho|Ficcion|4.60|21
+21|La Sombra del Viento|Carlos Ruiz Zafon|Misterio|4.75|18
+22|El Amor en los Tiempos del Colera|Gabriel Garcia Marquez|Romance|4.70|14
+23|La Casa de los Espiritus|Isabel Allende|Realismo Magico|4.65|13
+24|Pedro Paramo|Juan Rulfo|Realismo Magico|4.50|11
+25|Aura|Carlos Fuentes|Terror|4.40|8
+26|El Tunel|Ernesto Sabato|Ficcion|4.35|7
+27|Ficciones|Jorge Luis Borges|Ficcion|4.80|15
+28|El Llano en Llamas|Juan Rulfo|Ficcion|4.55|10
+29|Cuentos de la Selva|Horacio Quiroga|Infantil|4.45|12
+30|La Metamorfosis|Franz Kafka|Ficcion|4.60|14
+31|El Extranjero|Albert Camus|Ficcion|4.50|11
+32|La Peste|Albert Camus|Ficcion|4.55|9
+33|El Retrato de Dorian Gray|Oscar Wilde|Clasico|4.65|16
+34|Dracula|Bram Stoker|Terror|4.70|18
+35|Frankenstein|Mary Shelley|Terror|4.60|15
+36|El Nombre de la Rosa|Umberto Eco|Misterio|4.75|13
+37|Neuromante|William Gibson|Ciencia Ficcion|4.55|10
+38|Fundacion|Isaac Asimov|Ciencia Ficcion|4.85|22
+39|Yo Robot|Isaac Asimov|Ciencia Ficcion|4.70|17
+40|Un Mundo Feliz|Aldous Huxley|Distopia|4.65|14
+41|Rebelion en la Granja|George Orwell|Ficcion|4.75|16
+42|El Guardian entre el Centeno|J.D. Salinger|Ficcion|4.40|12
+43|Las Cronicas de Narnia|C.S. Lewis|Fantasia|4.80|24
+44|El Perfume|Patrick Suskind|Ficcion|4.60|11
+45|Los Miserables|Victor Hugo|Clasico|4.85|20
+46|El Conde de Montecristo|Alexandre Dumas|Aventura|4.90|23
+47|Los Tres Mosqueteros|Alexandre Dumas|Aventura|4.75|19
+48|Jane Eyre|Charlotte Bronte|Romance|4.70|15
+49|Cumbres Borrascosas|Emily Bronte|Romance|4.55|13
+50|El Retrato del Artista Adolescente|James Joyce|Ficcion|4.45|9

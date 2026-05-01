@@ -11,7 +11,7 @@ void menu_principal() {
     colaPendientes.head = NULL;
     colaPendientes.tail = NULL;
 
-    printf("\nIniciando Sistema de Resenas...\n");
+    // printf("\nIniciando Sistema de Resenas...\n");
 
     // Cargamos los datos persistentes de los archivos .txt
     load_catalog(&libros);

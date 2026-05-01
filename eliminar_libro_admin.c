@@ -37,10 +37,11 @@ void eliminar_libro_admin(struct Libro **libros) {
     }
     
     // Confirmamos antes de eliminar
-    printf("\n¿Estas seguro de eliminar '%s'? (1=Si, 0=No): ", libro_eliminar->titulo);
+    printf("\n¿Estas seguro de eliminar '%s'? (1=Si, 0=Cancelar): ", libro_eliminar->titulo);
     int confirmar;
     if(scanf("%d", &confirmar) != 1 || confirmar != 1) {
-        printf("\n[!] Eliminacion cancelada.\n");
+        printf("\n[i] Eliminacion cancelada.\n");
+        while(getchar() != '\n');
         return;
     }
     

@@ -2,6 +2,15 @@
 
 void agregar_libro_admin(struct Libro **libros) {
     printf("\n--- AGREGAR NUEVO LIBRO ---\n");
+    
+    int confirmar;
+    printf("¿Deseas agregar un nuevo libro? (1=Si, 0=Cancelar): ");
+    if(scanf("%d", &confirmar) != 1 || confirmar != 1) {
+        printf("\n[i] Operacion cancelada.\n");
+        while(getchar() != '\n');
+        return;
+    }
+    
     struct Libro *nuevo = (struct Libro*)malloc(sizeof(struct Libro));
     if (nuevo == NULL) {
         printf("[!] Error: No se pudo asignar memoria.\n");
@@ -20,7 +29,7 @@ void agregar_libro_admin(struct Libro **libros) {
     // Limpiamos el buffer
     while(getchar() != '\n');
     
-    printf("Titulo: ");
+    printf("\nTitulo: ");
     fgets(nuevo->titulo, MAX_STR, stdin);
     nuevo->titulo[strcspn(nuevo->titulo, "\n")] = 0;
     

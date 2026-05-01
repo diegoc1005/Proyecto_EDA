@@ -12,9 +12,16 @@ void escribir_resena_usuario(struct Usuario *user, struct Libro *libros, struct 
     show_catalog(libros);
     
     int idLibro;
-    printf("\nIngresa el ID del libro que deseas resenar: ");
+    printf("\nIngresa el ID del libro que deseas resenar (0 para cancelar): ");
     if(scanf("%d", &idLibro) != 1) {
         printf("\n[!] Error: ID invalido.\n");
+        while(getchar() != '\n');
+        return;
+    }
+    
+    // Si el usuario ingresa 0, cancelamos
+    if (idLibro == 0) {
+        printf("\n[i] Operacion cancelada.\n");
         while(getchar() != '\n');
         return;
     }

@@ -6,23 +6,29 @@ void moderar_resenas_admin(struct Libro **libros, struct Cola *cola) {
     
     // Intentamos sacar la peticion mas antigua de la cola
     if (dequeue(cola, &peticion_actual) == True) {
-        printf("ID Libro: %d | ID Usuario: %d | Calificacion: %d estrellas\n", 
+        printf("ID Libro: %d | ID Usuario: %d | Calificacion: %d estrellas\n",
                peticion_actual.idLibro, peticion_actual.idUsuario, peticion_actual.puntuacion);
         printf("Texto: %s\n", peticion_actual.texto);
         
         int decision;
-        printf("\n1. Aprobar | 2. Rechazar\nDecision: ");
+        printf("\n1. Aprobar | 2. Rechazar | 0. Volver (dejar pendiente)\nDecision: ");
         
         if(scanf("%d", &decision) != 1) {
             printf("\n[!] Error: Entrada invalida. La resena se regresara a la cola.\n");
-            while(getchar() != '\n'); 
+            while(getchar() != '\n');
             // Regresamos la reseña a la cola para que no se pierda
-            enqueue(cola, peticion_actual.idResena, peticion_actual.idLibro, 
+            enqueue(cola, peticion_actual.idResena, peticion_actual.idLibro,
                     peticion_actual.idUsuario, peticion_actual.texto, peticion_actual.puntuacion);
             return;
         }
         
-        if (decision == 1) {
+        if (decision == 0) {
+            // Usuario decidió volver sin moderar
+            printf("\n[i] Resena devuelta a la cola.\n");
+            enqueue(cola, peticion_actual.idResena, peticion_actual.idLibro,
+                    peticion_actual.idUsuario, peticion_actual.texto, peticion_actual.puntuacion);
+            return;
+        } else if (decision == 1) {
             printf("Resena APROBADA.\n");
             
             // Buscamos el libro para actualizar su calificación
@@ -57,8 +63,13 @@ void moderar_resenas_admin(struct Libro **libros, struct Cola *cola) {
                 }
                 libro_actual = libro_actual->nxt;
             }
-        } else {
+        } else if (decision == 2) {
             printf("Resena RECHAZADA.\n");
+        } else {
+            printf("\n[!] Opcion invalida. La resena se regresara a la cola.\n");
+            enqueue(cola, peticion_actual.idResena, peticion_actual.idLibro,
+                    peticion_actual.idUsuario, peticion_actual.texto, peticion_actual.puntuacion);
+            return;
         }
         
         // Guardamos la cola actualizada (se quitó una reseña)

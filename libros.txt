@@ -47,4 +47,4 @@
 4|Rayuela|Julio Cortazar|Ficcion|4.56|9
 41|Rebelion en la Granja|George Orwell|Ficcion|4.75|16
 40|Un Mundo Feliz|Aldous Huxley|Distopia|4.65|14
-39|Yo Robot|Isaac Asimov|Ciencia Ficcion|4.66|18
+39|Yo Robot|Isaac Asimov|Ciencia Ficcion|4.63|19

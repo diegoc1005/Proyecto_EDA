@@ -23,7 +23,7 @@ void buscar_titulo_usuario(struct Libro *libros) {
     printf("==============================================================================================\n");
     
     while (actual != NULL) {
-        // Búsqueda parcial (case-sensitive)
+        // Búsqueda parcial 
         if (strstr(actual->titulo, titulo_buscar) != NULL) {
             printf("%-4d | %-35s | %-25s | %-15s | %.1f\n",
                    actual->id, actual->titulo, actual->autor, actual->genero, actual->calificacion);
@@ -41,5 +41,3 @@ void buscar_titulo_usuario(struct Libro *libros) {
     }
     printf("\n");
 }
-
-// Made with Bob

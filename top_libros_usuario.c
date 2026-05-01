@@ -49,7 +49,7 @@ void top_libros_usuario(struct Libro *libros) {
     printf("==============================================================================================\n");
     
     for (int i = 0; i < mostrar; i++) {
-        printf("%-4d | %-35s | %-25s | %-15s | %.2f ⭐\n", 
+        printf("%-4d | %-35s | %-25s | %-15s | %.2f \n", 
                i+1, array[i]->titulo, array[i]->autor, array[i]->genero, array[i]->calificacion);
     }
     
@@ -57,5 +57,3 @@ void top_libros_usuario(struct Libro *libros) {
     
     free(array);
 }
-
-// Made with Bob

@@ -88,5 +88,3 @@ void ver_resenas_libro(struct Libro *libros) {
         printf("Total: %d resena(s) mostrada(s).\n", resenas_mostradas);
     }
 }
-
-// Made with Bob

@@ -50,7 +50,7 @@ void buscar_genero_usuario(struct Libro *libros) {
     printf("==============================================================================================\n");
     
     while (actual != NULL) {
-        // Comparación case-insensitive básica
+        // Comparación
         if (strstr(actual->genero, genero_buscar) != NULL ||
             strcmp(actual->genero, genero_buscar) == 0) {
             printf("%-4d | %-35s | %-25s | %-15s | %.1f\n",

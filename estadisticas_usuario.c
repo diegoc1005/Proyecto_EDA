@@ -56,22 +56,20 @@ void estadisticas_usuario(struct Libro *libros) {
     float promedio_general = (total_libros > 0) ? suma_calificaciones / total_libros : 0.0;
     
     // Mostramos estadísticas
-    printf("📚 LIBROS:\n");
+    printf("   LIBROS:\n");
     printf("   Total de libros en catalogo: %d\n", total_libros);
     printf("   Generos diferentes: %d\n", num_generos);
     printf("   Genero mas popular: %s (%d libros)\n\n", genero_popular, max_libros);
     
-    printf("⭐ CALIFICACIONES:\n");
+    printf("   CALIFICACIONES:\n");
     printf("   Total de resenas: %d\n", total_resenas);
     printf("   Promedio general: %.2f estrellas\n", promedio_general);
     printf("   Promedio de resenas por libro: %.1f\n\n", (float)total_resenas / total_libros);
     
-    printf("📊 DISTRIBUCION POR GENERO:\n");
+    printf("   DISTRIBUCION POR GENERO:\n");
     for (int i = 0; i < num_generos; i++) {
         printf("   %-20s: %2d libro(s)\n", generos[i], contador_generos[i]);
     }
     
     printf("\n");
 }
-
-// Made with Bob
